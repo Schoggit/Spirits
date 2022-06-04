@@ -37,7 +37,10 @@ function search(query){
         case "-n":
             query = query.substr(3);
             window.location = 
+
     	"https://nyaa.si/?f=0&c=0_0&q=" + 
+
+    	"https://www.nyaa.se/?page=search&cats=0_0&filter=0&term=" + 
     	query.replaceChars("+", "%2B");
     	break;
 
@@ -89,4 +92,6 @@ window.onload = function(){
 // You can use the above two to modify an existing rule
 //
 // If you wish to change the number of characters in a "case", you need to change the line below, changing query.substr() to n+1, n being the number of characters.
+
 // This ensures that when you search for something, the whole of your idenfier and the space between the identifier and query are removed.
+
